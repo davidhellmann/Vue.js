@@ -2,14 +2,12 @@
  * Bundle Scripts
  */
 
-// Vendor
+import Vue from 'vue'
 
-// Personal
-import './partials/bodyclass'
-import './partials/example'
-import './partials/lazyloading'
-import './partials/scrollto'
-import './partials/pagetransition'
-import './partials/photoswipe'
-// import './partials/matchHeight'
-import './partials/waypoints.anime'
+import hello from './vue/01_helloworld.vue'
+new Vue({
+    el: '#app',
+    components: {
+        hello
+    }
+})
