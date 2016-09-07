@@ -16,30 +16,7 @@
 {% block appContent %}
 
   <div id="app" class="vue">
-    <div class="vue__inner">
-
-      <form action="done.html" @submit="handleIt">
-
-        <button type="submit">
-          Submit Me!
-        </button>
-
-      </form>
-
-    </div>
+    <step03></step03>
   </div>
 
 {% endblock %}
-
-
-<script>
-  new Vue({
-    el: '#app',
-
-    methods: {
-      handleIt: function () {
-        alert('Handled');
-      }
-    }
-  })
-</script>
