@@ -1,0 +1,45 @@
+{#
+  Home Page
+  --------------------------------------------------
+
+  This is your Homepage!
+#}
+
+{% extends "_layouts/_master.html" %}
+{% set bodyClass = "home" %}
+{% block appTitle %}
+  Step 2
+{% endblock %}
+
+
+
+{% block appContent %}
+
+  <div id="app" class="vue">
+    <div class="vue__inner">
+
+      <form action="done.html" @submit="handleIt">
+
+        <button type="submit">
+          Submit Me!
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
+
+
+<script>
+  new Vue({
+    el: '#app',
+
+    methods: {
+      handleIt: function () {
+        alert('Handled');
+      }
+    }
+  })
+</script>

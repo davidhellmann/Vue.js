@@ -3,13 +3,15 @@
  */
 
 // Vendor
-import Vue from 'vue/dist/vue'
-
+import Vue from 'vue'
 import hello from './vue/_helloworld.vue'
+import step02 from './vue/laracast/step_02.vue'
+
 new Vue({
     el: '#app',
     components: {
-        hello
+        hello,
+        step02
     }
 })
 
@@ -21,4 +23,4 @@ import './partials/scrollto'
 import './partials/pagetransition'
 import './partials/photoswipe'
 // import './partials/matchHeight'
-import './partials/waypoints.anime'
+// import './partials/waypoints.anime'

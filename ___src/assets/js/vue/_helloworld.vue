@@ -4,6 +4,13 @@
     <p>
       {{ message }}
     </p>
+    <p>
+      <input v-model="message">
+    </p>
+    <p>
+      {{ $data | json }}
+    </p>
+
   </div>
 </template>
 
@@ -15,7 +22,7 @@
   export default{
     data(){
       return{
-        message: 'hello vue fuuu'
+        message: 'Hello Dude, it\'s Vue.js!'
       }
     }
   }

@@ -1,0 +1,23 @@
+/*--------------------------------------------------
+    .vue
+  --------------------------------------------------*/
+
+.vue {
+  $root: &;
+
+  @include container();
+  background-color: color('black-5');
+  padding: vr(1) s(2);
+  border-radius: 2px;
+  box-shadow: boxshadow('1');
+}
+
+.vue__inner {
+  * {
+    @include container();
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
