@@ -23,7 +23,6 @@
     "babelify": "^7.2.0",
     "browser-sync": "^2.11.1",
     "browserify": "^13.0.0",
-    "browserify-hmr": "^0.3.1",
     "browserify-shim": "^3.8.12",
     "cssnano": "^3.5.2",
     "del": "^2.2.0",
@@ -60,13 +59,11 @@
     "utils-merge": "^1.0.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
-
-    "browserify-hmr": "^0.3.1",
-    "gulp-vueify": "^0.0.3",
-    "vue":"^2.0.0-beta.6",
-    "vue-router":"^v2.0.0-beta.4",
+    "vue": "1.0.26",
+    "vueify": "^8.7.0",
+    "vue-router": "^0.7.13",
     "vue-resource": "^0.9.3",
-
+    "browserify-hmr": "^0.3.1",
     "watchify": "^3.7.0",
     "yargs": "^5.0.0"
   },
@@ -103,7 +100,6 @@
       "browserify-shim"
     ]
   },
-    "browserify-shim": {
-    "jquery": "$"
+  "browserify-shim": {
   }
 }

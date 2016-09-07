@@ -5,9 +5,8 @@ import browserify from 'browserify';
 import watchify from 'watchify';
 import babelify from 'babelify';
 import merge from 'utils-merge';
-
-  import vueify from 'vueify';
-  import hmr from 'browserify-hmr';
+import vueify from 'vueify';
+import hmr from 'browserify-hmr';
 
 
 //console.log(config.src.js + config.files.jsApp.srcName);
@@ -17,15 +16,15 @@ const watchJs = () => {
   const bundler = watchify(
     browserify(config.src.js + config.files.jsApp.srcName, args)
   )
-  
+
   .plugin(hmr)
-  
+
   .transform(
     babelify.configure({presets: ['es2015']})
   )
-  
+
   .transform(vueify)
-  
+
 
   bundleJs(bundler)
 
