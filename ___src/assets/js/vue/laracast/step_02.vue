@@ -1,19 +1,21 @@
 <template>
-  <form>
-    <span class="error" v-show="!message">
-      You must enter a message
-    </span>
+  <div class="wrapper">
+    <form>
+      <span class="error" v-show="!message">
+        You must enter a message
+      </span>
 
-    <textarea v-model="message"></textarea>
+      <textarea v-model="message"></textarea>
 
-    <button type="submit" v-show="message">
-      Send Message
-    </button>
-  </form>
+      <button type="submit" v-show="message">
+        Send Message
+      </button>
+    </form>
 
-  <pre>
-    {{ $data | json }}
-  </pre>
+    <pre>
+      {{ $data }}
+    </pre>
+  </div>
 </template>
 
 <style>

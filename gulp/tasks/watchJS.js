@@ -6,6 +6,7 @@ import watchify from 'watchify';
 import babelify from 'babelify';
 import merge from 'utils-merge';
 import vueify from 'vueify';
+import aliasify from 'aliasify';
 import hmr from 'browserify-hmr';
 
 
@@ -22,7 +23,12 @@ const watchJs = () => {
   .transform(
     babelify.configure({presets: ['es2015']})
   )
-
+  .transform(aliasify,{
+      aliases: {
+          "vue": "./node_modules/vue/dist/vue.js"
+      },
+      verbose: true
+  })
   .transform(vueify)
 
 

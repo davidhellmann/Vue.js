@@ -2,14 +2,29 @@
  * Bundle Scripts
  */
 
-// solltest du ersetzen durch aliasify
-// hatte dazu zuletzt was in den channel geschrieben
-import Vue from 'vue/dist/vue'
 
-import hello from './vue/01_helloworld.vue'
+// Vendor
+import Vue from 'vue'
+import hello from './vue/_helloworld.vue'
+import step02 from './vue/laracast/step_02.vue'
+import step03 from './vue/laracast/step_03.vue'
+
+
 new Vue({
     el: '#app',
     components: {
-      hello
+        hello,
+        step02,
+        step03
     }
 })
+
+// Personal
+import './partials/bodyclass'
+import './partials/example'
+import './partials/lazyloading'
+import './partials/scrollto'
+import './partials/pagetransition'
+import './partials/photoswipe'
+// import './partials/matchHeight'
+// import './partials/waypoints.anime'
