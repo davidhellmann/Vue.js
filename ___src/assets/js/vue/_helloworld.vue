@@ -1,17 +1,21 @@
 <template>
   <div class="hello">
+
     <h2>Hello World</h2>
     <div class="vue__inner">
       <p>
         {{ message }}
       </p>
+
       <p>
         <input v-model="message">
       </p>
+
       <pre>
         {{ $data }}
       </pre>
     </div>
+
   </div>
 </template>
 
